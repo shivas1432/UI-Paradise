@@ -3,7 +3,9 @@
 
 <div align="center">
 
-![UI Paradise Banner](https://img.shields.io/badge/UI%20Designs-4000%2B-FF6B6B?style=for-the-badge&logo=figma&logoColor=white)
+![UI Paradise Banner](1.png)
+
+![UI Paradise Badge](https://img.shields.io/badge/UI%20Designs-4000%2B-FF6B6B?style=for-the-badge&logo=figma&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-00D9FF?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-7B68EE?style=for-the-badge)
 
@@ -56,10 +58,10 @@ Welcome to **UI Paradise** - a tropical island of creativity where **4000+ stunn
 
 ```bash
 # Clone your slice of paradise
-git clone https://github.com/shivas1432/ui-paradise.git
+git clone https://github.com/shivas1432/UI-Paradise.git
 
 # Enter the tropical design world
-cd ui-paradise
+cd UI-Paradise
 
 # Start your design adventure!
 ```
@@ -100,10 +102,10 @@ git push origin feature/tropical-ui-design
 
 <div align="center">
 
-![Repo Size](https://img.shields.io/github/repo-size/shivas1432/ui-paradise?style=flat-square&color=FF6B6B)
-![Stars](https://img.shields.io/github/stars/shivas1432/ui-paradise?style=flat-square&color=FFD93D)
-![Forks](https://img.shields.io/github/forks/shivas1432/ui-paradise?style=flat-square&color=6BCF7F)
-![Issues](https://img.shields.io/github/issues/shivas1432/ui-paradise?style=flat-square&color=4D96FF)
+![Repo Size](https://img.shields.io/github/repo-size/shivas1432/UI-Paradise?style=flat-square&color=FF6B6B)
+![Stars](https://img.shields.io/github/stars/shivas1432/UI-Paradise?style=flat-square&color=FFD93D)
+![Forks](https://img.shields.io/github/forks/shivas1432/UI-Paradise?style=flat-square&color=6BCF7F)
+![Issues](https://img.shields.io/github/issues/shivas1432/UI-Paradise?style=flat-square&color=4D96FF)
 
 </div>
 
