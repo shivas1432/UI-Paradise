@@ -1,0 +1,39 @@
+﻿<div class="tooltip-container">
+  <span class="tooltip">Uiverse.io</span>
+  <span class="text">Tooltip</span>
+</div>
+<style>
+.tooltip-container {
+  --background: #22d3ee;
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+}
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background: var(--background);
+  color: #fff;
+  border-radius: 0.3em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 14px;
+  width: 120%;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+}
+.tooltip-container:hover .tooltip {
+  top: -100%;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+</style>

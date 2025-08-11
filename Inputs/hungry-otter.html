@@ -1,0 +1,35 @@
+﻿<div class="rating">
+  <input value="5" name="rating" id="star5" type="radio">
+  <label for="star5"></label>
+  <input value="4" name="rating" id="star4" type="radio">
+  <label for="star4"></label>
+  <input value="3" name="rating" id="star3" type="radio">
+  <label for="star3"></label>
+  <input value="2" name="rating" id="star2" type="radio">
+  <label for="star2"></label>
+  <input value="1" name="rating" id="star1" type="radio">
+  <label for="star1"></label>
+</div>
+<style>
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0;
+}
+.rating input[type="radio"] {
+  display: none;
+}
+.rating label {
+  font-size: 30px;
+  color: rgba(187, 183, 183, 0.726);
+  margin: 0 2px;
+  cursor: pointer;
+}
+.rating label:before {
+  content: "\2605";
+}
+.rating input[type="radio"]:checked ~ label:before {
+  content: "\2606";
+  color: #016bf5;
+}
+</style>

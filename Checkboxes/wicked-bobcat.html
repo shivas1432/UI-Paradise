@@ -1,0 +1,33 @@
+﻿<label>
+  <input class="input" type="checkbox" />
+  <span class="custom-checkbox"></span>
+</label>
+<style>
+.input[type="checkbox"] {
+  display: none;
+}
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid lime;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: lime;
+  border-radius: 50%;
+  opacity: 0;
+}
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+</style>

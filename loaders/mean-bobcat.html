@@ -1,0 +1,23 @@
+﻿<div class="animation">Text writing!</div>
+<style>
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.animation {
+  font: bold 200% Consolas, Monaco, monospace;
+  border-right: .1em solid black;
+  width: 13.20ch;
+  margin: 2em 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 5s steps(13, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+</style>

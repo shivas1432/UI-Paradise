@@ -1,0 +1,49 @@
+﻿<label class="container">
+  <input type="checkbox" checked="checked">
+  <div class="checkmark"></div>
+</label>
+<style>
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+.container {
+ border-radius: 9px;
+ display: block;
+ position: relative;
+ cursor: pointer;
+ font-size: 20px;
+ user-select: none;
+ box-shadow: rgba(139, 18, 113, 0.2) 0px 8px 24px;
+ background-image: linear-gradient(45deg, #f3d5f7, #fbf6e7, #e6fcf5);
+}
+.checkmark {
+ border-radius: 9px;
+ position: relative;
+ top: 0;
+ left: 0;
+ height: 1.3em;
+ width: 1.3em;
+ background-color: linear-gradient(45deg, #f8e7fa, #fbf6e7, #e6fcf5);
+}
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+.container input:checked ~ .checkmark:after {
+ display: block;
+}
+.container .checkmark:after {
+ left: 0.45em;
+ top: 0.25em;
+ width: 0.25em;
+ height: 0.5em;
+ border: solid rgb(233, 182, 182);
+ border-width: 0 0.15em 0.15em 0;
+ transform: rotate(45deg);
+}
+</style>

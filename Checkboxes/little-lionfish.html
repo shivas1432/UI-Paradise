@@ -1,0 +1,63 @@
+﻿<label class="checkbox-container">
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+</label>
+<style>
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox-container {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+  animation: checkboxExpand 0.3s ease forwards;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  width: 8px;
+  height: 15px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+}
+.checkbox-container:hover .checkmark {
+  background-color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+@keyframes checkboxExpand {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+}
+</style>

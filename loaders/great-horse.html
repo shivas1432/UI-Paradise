@@ -1,0 +1,68 @@
+﻿<div class="loader-container">
+  <div class="loader-cube">
+    <div class="loader-side front"></div>
+    <div class="loader-side back"></div>
+    <div class="loader-side left"></div>
+    <div class="loader-side right"></div>
+    <div class="loader-side top"></div>
+    <div class="loader-side bottom"></div>
+  </div>
+</div>
+<style>
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+  perspective: 800px;
+}
+.loader-cube {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  transform-style: preserve-3d;
+  animation: rotateCube 2s infinite linear;
+}
+.loader-side {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background: #333;
+  border: 0.1em solid #fff;
+}
+.front {
+  transform: translateZ(2.5em);
+}
+.back {
+  transform: rotateY(180deg) translateZ(2.5em);
+}
+.right {
+  transform: rotateY(90deg) translateZ(2.5em);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(2.5em);
+}
+.top {
+  transform: rotateX(90deg) translateZ(2.5em);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(2.5em);
+}
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+.loader-side:hover {
+  background: #555;
+}
+.loader-side:focus {
+  border: 0.1em solid #999;
+}
+.loader-side:active {
+  opacity: 0.8;
+}
+</style>

@@ -1,0 +1,33 @@
+﻿<div class="loadingtext">
+  <p>Loading</p>
+</div>
+<style>
+.loadingtext p {
+  color: white;
+  position: relative;
+}
+.loadingtext p::after {
+  position: absolute;
+  animation: b 3s infinite linear;
+  color: white;
+  content: "";
+  left: 105%;
+}
+@keyframes b {
+  0% {
+    content: "";
+  }
+  10% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  70% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
+</style>
